@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+::selection {
+    background-color: #15171E;
+}
+:root {
+    --bg: #15171E;
+    --fg: hsl(0, 0%, 85%);
+    --fg-75: hsla(0, 0%, 85%, 0.75);
+    --fg-50: hsla(0, 0%, 85%, 0.50);
+
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+
+    background-color: var(--bg);
+    color: var(--fg);
+
+    font-family: var(--font);
+    font-size: 15px;
+    letter-spacing: -0.009px;
+    font-weight: 400;
+    font-kerning: normal;
+    font-feature-settings: "liga", "frac", "cv05", "cv08", "ss01";
+    line-height: 1.6;
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+    }
+}
+body {
+    width: min(90%, 40rem);
+    margin: 0 auto;
+    padding: 3rem 0;
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+main > * {
+    margin-block-start: 0;
+    margin-block-end: 1.25rem;
+}
+main > *:last-child {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+}
+p {
+    text-align: left;
+}
+a {
+    color: var(--fg);
+    text-decoration-color: var(--fg-50);
+}
+a:hover {
+    text-decoration-color: var(--fg);
+}
+i,
+.i {
+    font-style: italic;
+}
+b, .b {
+    font-weight: 600;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0em;
+}
+
+li {
+    margin-bottom: 0.25rem;
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu span:nth-of-type(1) {
+    transition: all 0.2s;
+}
+.menu a:hover span:nth-of-type(1) {
+    color: var(--fg-50);
+}
+.menu a span:nth-of-type(2) {
+    color: var(--fg-50);
+}
+.menu a span:nth-of-type(3) {
+    display: inline-block;
+    vertical-align: top;
+    color: var(--fg-50);
+    opacity: 0;
+    transform: translateX(-0.1rem);
+    transition: all 0.15s;
+}
+.menu a:hover span:nth-of-type(3) {
+    opacity: 100;
+    transform: translateX(0.1rem);
+}
+.glyph {
+    width: 1.2rem;
+    fill: #8b949e;
+}
+#name {
+    font-family: "Fraunces", var(--font);
+    font-size: 1.15rem;
+    font-style: italic;
+    font-variation-settings: "WONK" 1, "SOFT" 0, "wght" 600, "opsz" 9;
+}
