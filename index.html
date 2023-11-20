@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/320px-HD_transparent_picture.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -18,7 +17,10 @@
         <a class="theme-mode" x-on:click="dark = !dark">
             <img x-bind:src="dark ? './assets/images/sun.svg' : './assets/images/moon.svg'" alt="Change theme">
         </a>
-        <p><span id="name">I'm Max,</span> a hungarian mathematics and physics student interested in webdevelopment, and <a href="https://rust-lang.com">Rust</a>. I'm sort of a CSS wizard.</p>
+        <p id="name">Max</p>
+        <p>I'm a hungarian mathematics and physics student interested in computer science and pure mathematics.</p>
+        <p>The subjects I enjoy most are calculus and geometry.</p>
+        <p>I enjoy reading science fiction novels, especially if they're over-explanative about scientific facts. Some of my favourites include <i>Dune</i>, <i>The Foundation</i> and <i>Luna: New Moon.</i></p>
         <ul class="menu">
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="glyph"><path d="M8.29202 0.000202252C6.27825 0.00837918 4.27877 0.264357 3.23839 0.744626C3.23839 0.744626 1 1.76482 1 5.23985C1 9.37638 0.997 14.5711 4.70851 15.5757C6.12991 15.9582 7.35227 16.0405 8.33499 15.9838C10.1184 15.883 11.0005 15.3359 11.0005 15.3359L10.9406 14.0165C10.9406 14.0165 9.78462 14.4244 8.35322 14.3776C6.93515 14.3276 5.44121 14.221 5.20853 12.4481C5.1872 12.2832 5.17662 12.1163 5.17728 11.9501C8.18209 12.697 10.7444 12.2754 11.4497 12.19C13.4191 11.9503 15.1336 10.7139 15.3522 9.58385C15.6949 7.80294 15.6661 5.23985 15.6661 5.23985C15.6661 1.76482 13.4316 0.744626 13.4316 0.744626C12.3345 0.231649 10.3058 -0.00797468 8.29202 0.000202252ZM6.13696 2.65066C6.82691 2.66919 7.5087 2.97824 7.92872 3.63106L8.33499 4.32203L8.73995 3.63106C9.58333 2.31808 11.4736 2.40001 12.3729 3.41595C13.2023 4.3825 13.0175 5.00632 13.0175 9.32441V9.32571H11.3859V5.56839C11.3859 3.80952 9.14622 3.74159 9.14622 5.81219V7.9894H7.52505V5.81219C7.52505 3.74159 5.28666 3.80821 5.28666 5.56709V9.32441H3.65117C3.65117 5.00298 3.46969 4.37515 4.29573 3.41595C4.74875 2.90464 5.44701 2.63214 6.13696 2.65066Z" fill="inherit"></path></svg>
@@ -38,9 +40,9 @@
             </li>
             <li>
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="glyph"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-                <a href="https://instagram.com/koffeinpatkany" target="_blank">
+                <a href="https://www.instagram.com/gyorskaveszunet/" target="_blank">
                     <span>Instagram</span>
-                    <span>@koffeinpatkany</span>
+                    <span>@gyorskaveszunet</span>
                     <span>→</span>
                 </a>
             </li>
